@@ -1,3 +1,9 @@
+# Build project:
+1. ng new proj
+2. ng add @angular/material
+3. npm install angular-in-memory-web-api --save
+4. copy files from git to proj
+
 # BlogTest
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.1.2.
