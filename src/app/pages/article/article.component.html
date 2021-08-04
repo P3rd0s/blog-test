@@ -1,0 +1,36 @@
+<div class="article">
+
+  <div class="data-container">
+    <div>
+      <button mat-button color="primary" (click)="goBack()">Назад</button>
+    </div>
+
+    <div *ngIf="article">
+      <mat-card class="article-card">
+        <mat-card-header>
+          <mat-card-title>Запись "{{article.title}}"</mat-card-title>
+        </mat-card-header>
+        <mat-card-content>
+          <div>
+            <mat-form-field color="accent" class="input" appearance="fill">
+              <mat-label>Название статьи</mat-label>
+              <input matInput placeholder="Название" [(ngModel)]="article.title">
+            </mat-form-field>
+          </div>
+
+          <div>
+            <mat-form-field color="accent" class="input" appearance="fill">
+              <mat-label>Описание статьи</mat-label>
+              <textarea matInput placeholder="Напечатайте Статью" [(ngModel)]="article.content"></textarea>
+            </mat-form-field>
+          </div>
+
+        </mat-card-content>
+        <mat-card-actions class="actions">
+          <button mat-button (click)="deleteArticle()">Удалить</button>
+          <button mat-button (click)="saveArticle()">Сохранить</button>
+        </mat-card-actions>
+      </mat-card>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,59 @@
+.blog-page {
+  text-align: center;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: #f6f6f6;
+
+
+  .main-blog-content {
+    max-width: 500px;
+    height: auto;
+    background-color: antiquewhite;
+
+
+    .articles-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 15px;
+
+      .article-card {
+        min-width: 120px;
+        max-width: 120px;
+        overflow: hidden;
+        height: 150px;
+        margin: 15px;
+
+        .article-content, .article-title {
+          background: white;
+          color: black;
+          border: 2px solid black;
+          overflow: hidden;
+        }
+
+        .article-content {
+          height: 50px;
+        }
+
+        .article-link {
+          background: antiquewhite;
+        }
+      }
+    }
+
+    .new-article-button {
+      display: flex;
+      justify-content: center;
+      position: relative;
+      height: 20px;
+
+      button {
+        position: absolute;
+      }
+    }
+  }
+
+
+}
